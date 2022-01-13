@@ -1,5 +1,5 @@
 # Lab Report 1
-**Week 2**
+**Week 1-2**
 
 *by Basil Thaddeus*
 
