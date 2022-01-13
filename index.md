@@ -3,6 +3,9 @@
 
 *by Basil Thaddeus*
 
+[Lab Report 1](lab-report-1-week-2.html)
+[Lab Report 1](https://basilthaddeus.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
+
 ---
 
 ![Image](https://media.sandiegoreader.com/img/photos/2020/08/04/corner_XXX_chicken_sand.jpg)
