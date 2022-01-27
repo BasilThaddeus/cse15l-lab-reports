@@ -172,3 +172,13 @@ ssh cs15lwi22***@ieng6.ucsd.edu "ls"
 ![Image](images/remote_commands.png)
 
 There are many more commands to experiment with, some can be found [here](https://www.educative.io/blog/bash-shell-command-cheat-sheet). Be careful not to type in commands that seem suspicious, they may cause damage to your system.
+
+You may also run a java command remotely. Type the following command to run your java file which you have saved on the server.
+
+```bash
+ssh cs15lwi22***@ieng6.ucsd.edu "javac myfile.java ; java myfile"
+```
+
+Of course, you can simply manipulate the basic command if you would like to pass arguments to your java file. We can see the output of a basic hello world file below.
+
+![Image](images/run_remote_file.png)
