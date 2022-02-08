@@ -23,7 +23,7 @@ It is important for us to commit to our github often so that we can see what was
 
 ![Image](images/commit1.png)
 
-In our [first commit](https://github.com/BasilThaddeus/markdown-parse/commit/316c28cac2f35957a3c86f49b183c130d1072f79), we want to test and add our breaking tests. In the image above, we can see the `test-file2.md` being edited to add new lines which are meant to break the code. Below that, in the comments on the commit, we can see the exact error we ran into. 
+In our [first commit](https://github.com/BasilThaddeus/markdown-parse/commit/316c28cac2f35957a3c86f49b183c130d1072f79), we want to test and add our [breaking tests](https://github.com/BasilThaddeus/markdown-parse/blob/316c28cac2f35957a3c86f49b183c130d1072f79/test-file2.md). In the image above, we can see the `test-file2.md` being edited to add new lines which are meant to break the code. Below that, in the comments on the commit, we can see the exact error we ran into.
 
 > Generally, you do not want to add all your breaking cases at once. You should test each individually, figure out which one is causing the error, and then fix your issue. The image above does not show the best practice.
 
@@ -48,7 +48,7 @@ at MarkdownParse.main(MarkdownParse.java:26)
 
 ![Image](images/commit2.png)
 
-In our [second commit](https://github.com/BasilThaddeus/markdown-parse/commit/48ca5caa57727fb3dff3fe2a58e64b00a2fad15c), our goal was to fix the bugs which had been caused by the first commit. We added new lines to the `MarkdownParse.java` file which caused the while loop to `break` whenever we could not find one of the open or close params for the brackets and parentheses. This caused the java heap error to stop.
+In our [second commit](https://github.com/BasilThaddeus/markdown-parse/commit/48ca5caa57727fb3dff3fe2a58e64b00a2fad15c), our goal was to fix the [breaking cases](https://github.com/BasilThaddeus/markdown-parse/blob/48ca5caa57727fb3dff3fe2a58e64b00a2fad15c/test-file2.md) which had been caused by the first commit. We added new lines to the `MarkdownParse.java` file which caused the while loop to `break` whenever we could not find one of the open or close params for the brackets and parentheses. This caused the java heap error to stop.
 
 Additionally, as observed in line 19, we added a way to recognize links from images by checking if there is a `!` before the first open bracket. This was a preventive way of programming, as this issue would have occured at some point in the programming process.
 
@@ -71,7 +71,7 @@ The link for `nested.link` was incorrect as it was meant to output `nested.link/
 
 ![Image](images/commit3.png)
 
-In our [third and final commit](https://github.com/BasilThaddeus/markdown-parse/commit/f0f3a6c6099d65edc6b3d20ae340dc3da5a5e938), we started finalizing on our code more. Although, as a class, we were unable to solve the issue of nested parantheses in links, we were able to fix some problems caused by text being included in between links.
+In our [third and final commit](https://github.com/BasilThaddeus/markdown-parse/commit/f0f3a6c6099d65edc6b3d20ae340dc3da5a5e938), we started finalizing on our code more. Although, as a class, we were unable to solve the issue of [nested parantheses](https://github.com/BasilThaddeus/markdown-parse/blob/f0f3a6c6099d65edc6b3d20ae340dc3da5a5e938/test-file2.md) in links, we were able to fix some problems caused by text being included in between links.
 
 For example, `[link] foo (google.com)` should not return any link as it is not a valid hyperlink. To prevent this, we added a link of code that would check if the character before our open parantheses `(` was the closed bracket `]`. This another bug we had in our code.
 
