@@ -3,7 +3,7 @@
 
 *by Basil Thaddeus*
 
-[Home]() > [Lab Report 3](https://basilthaddeus.github.io/cse15l-lab-reports/lab-report-3-week-6.html)
+[Home](https://basilthaddeus.github.io/cse15l-lab-reports/) > [Lab Report 3](https://basilthaddeus.github.io/cse15l-lab-reports/lab-report-3-week-6.html)
 
 [prev](https://basilthaddeus.github.io/cse15l-lab-reports/lab-report-2-week-4.html) : [next]()
 
@@ -35,3 +35,15 @@ Although these two options have the same result, they have two different purpose
 ![Image](images/scp-directory.png)
 
 To check if our files successfully uploaded, we can log back into our server account and check our main directory.
+
+![Image](images/scp-post.png)
+
+# Streamline Copying and Connecting
+
+We can streamline our task of both copying the directory and connecting to the server very easily. To do this, we can combine our connecting and copying commands into one line, as shown below
+
+```bash
+scp -r . cs15lwi22***@ieng6.ucsd.edu:~/markdown-parse & ssh cs15lwi22***@ieng6.ucsd.edu
+```
+
+This command works for windows. In the case of Linux or Mac, you may want to replace the `&` with a `;`.
