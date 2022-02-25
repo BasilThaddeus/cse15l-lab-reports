@@ -32,7 +32,7 @@ scp -r . cs15lwi22***@ieng6.ucsd.edu:~/[new directory name]
 
 Although these two options have the same result, they have two different purposes. Example 1 copies the entire directory, including the `directory name`, into your server. Example 2, on the other hand, copies all the contents of the directory while allowing you to choose a `new directory name`. Both options work well.
 
-![Image](images/scp-directory.png)
+![Image](images/scp_directory.png)
 
 To check if our files successfully uploaded, we can log back into our server account and check our main directory.
 
@@ -47,3 +47,8 @@ scp -r . cs15lwi22***@ieng6.ucsd.edu:~/markdown-parse & ssh cs15lwi22***@ieng6.u
 ```
 
 This command works for windows. In the case of Linux or Mac, you may want to replace the `&` with a `;`.
+
+Here are the results:
+
+![Image](images/scp-p1.png)
+![Image](images/scp-p2.png)
