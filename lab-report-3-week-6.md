@@ -40,7 +40,7 @@ To check if our files successfully uploaded, we can log back into our server acc
 
 # Streamline Copying and Connecting
 
-We can streamline our task of both copying the directory and connecting to the server very easily. To do this, we can combine our connecting and copying commands into one line, as shown below
+We can streamline our task of both copying the directory and connecting to the server very easily, along with running commands. To do this, we can combine our connecting and copying commands into one line, as shown below
 
 ```bash
 scp -r . cs15lwi22***@ieng6.ucsd.edu:~/markdown-parse & ssh cs15lwi22***@ieng6.ucsd.edu
@@ -52,3 +52,13 @@ Here are the results:
 
 ![Image](images/scp-p1.png)
 ![Image](images/scp-p2.png)
+
+You may also be interested in running commands once you're connected to the server. To do this, you want to add the commands at the end of the previous line. For example,
+
+```bash
+scp -r . cs15lwi22***@ieng6.ucsd.edu:~/another/markdown-parse & ssh cs15lwi22***@ieng6.ucsd.edu "cd markdown-parse; ls; cd; ls"
+```
+
+These commands go into the directory, print out the files, go out by one folder, and then print it out again.
+
+![Image](images/final_result.png)
