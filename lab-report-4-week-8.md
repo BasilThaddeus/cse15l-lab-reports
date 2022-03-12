@@ -1,11 +1,11 @@
 # Lab Report 4
-**Week 7-8**
+**Weeks 7-8**
 
 *by Basil Thaddeus*
 
 [Home](https://basilthaddeus.github.io/cse15l-lab-reports/) > [Lab Report 4](https://basilthaddeus.github.io/cse15l-lab-reports/lab-report-4-week-8.html)
 
-[prev](https://basilthaddeus.github.io/cse15l-lab-reports/lab-report-3-week-6.html) : [next]()
+[prev](https://basilthaddeus.github.io/cse15l-lab-reports/lab-report-3-week-6.html) : [next](https://basilthaddeus.github.io/cse15l-lab-reports/lab-report-5-week-10.html)
 
 ---
 

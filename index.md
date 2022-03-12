@@ -12,6 +12,8 @@
 
 [Lab Report 4](https://basilthaddeus.github.io/cse15l-lab-reports/lab-report-4-week-8.html)
 
+[Lab Report 5](https://basilthaddeus.github.io/cse15l-lab-reports/lab-report-5-week-10.html)
+
 ---
 
 ![Image](https://media.sandiegoreader.com/img/photos/2020/08/04/corner_XXX_chicken_sand.jpg)
