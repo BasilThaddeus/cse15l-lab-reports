@@ -71,3 +71,11 @@ From the above, we can see that it did identify as a link. It seems that the imp
 # Analyzing our findings
 
 The results we looked at above do not signify that the local implementation is correct while the proffessors implementation is incorrect. It only states that the local implementation was able to locate and find some links that the `prof` implementation was not able to do. The same could occur with the `prof` implementation finding content that the `local` could not. More tests would need to be analyzed to fully understand the capabilities of both.
+
+Looking at the two instances where an error occured, we can notice that they both share one thing in common: a space in the link region. We can deduce that this may be causing the issue in our code. The bug could be a result of a check for a space which causes the link not to be included.
+
+In fact, looking at the code, we see that this is exactly the issue. In the prof's implementation, there is a case which tries to solve an issue which does not exist. Looking at the image below, we can identify where the bug occurs
+
+![Image](images/prof_bug.png)
+
+The code breaks and goes to the next case when there is a space in the potential link, indentified by `potentialLink.indexOf(" ") == -1` evaluating to false, therefore skipping to the else statement in the code.
